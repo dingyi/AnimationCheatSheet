@@ -4,6 +4,6 @@ Sass animation library for [CSS3 Animation Cheat Sheet][1] by Justin Aguilar.
 
 
 ## Credits
-Created by @[dingyi](https://twitter.com/dingyi 'Contact me on Twitter') under [MIT LICENSE](http://rem.mit-license.org/) 
+Created by @[dingyi](https://twitter.com/dingyi 'Contact me on Twitter') under [MIT LICENSE](http://rem.mit-license.org/)
 
-[1]: www.justinaguilar.com/animations/
+[1]: http://www.justinaguilar.com/animations/
