@@ -1,0 +1,16 @@
+.pullDown {
+	@include animation-name(pullDown);
+	@include animation-duration(1.1s);
+	@include animation-timing-function(ease-out);
+	@include transform-origin(50% 0%);
+}
+
+@include keyframes(pullDown) {
+	  0% { @include transform(scaleY(0.1)); }
+	 40% { @include transform(scaleY(1.02)); }
+	 60% { @include transform(scaleY(0.98)); }
+	 80% { @include transform(scaleY(1.01)); }
+	100% { @include transform(scaleY(0.98)); }
+	 80% { @include transform(scaleY(1.01)); }
+	100% { @include transform(scaleY(1)); }
+}

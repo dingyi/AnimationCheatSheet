@@ -1,0 +1,17 @@
+.hatch {
+	@include animation-name(hatch);
+	@include animation-duration(2s);
+	@include animation-timing-function(ease-in-out);
+	@include transform-origin(50% 100%);
+	visibility: visible !important;
+}
+
+@include keyframes(hatch) {
+	  0% { @include transform(rotate(0deg) scaleY(0.6)); }
+	 20% { @include transform(rotate(-2deg) scaleY(1.05)); }
+	 35% { @include transform(rotate(2deg) scaleY(1)); }
+	 50% { @include transform(rotate(-2deg)); }
+	 65% { @include transform(rotate(1deg)); }
+	 80% { @include transform(rotate(-1deg)); }
+	100% { @include transform(rotate(0deg)); }
+}

@@ -1,0 +1,15 @@
+.slideRight{
+	@include animation-name(slideRight);
+	@include animation-duration(1s);
+	@include animation-timing-function(ease-in-out);
+	visibility: visible !important;
+}
+
+@include keyframes(slideRight) {
+	  0% { @include transform(translateX(-150%)); }
+	 50% { @include transform(translateX(8%)); }
+	 65% { @include transform(translateX(-4%)); }
+	 80% { @include transform(translateX(4%)); }
+	 95% { @include transform(translateX(-2%)); }
+	100% { @include transform(translateX(0%)); }
+}

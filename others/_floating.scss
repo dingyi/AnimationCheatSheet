@@ -1,0 +1,11 @@
+.floating{
+	@include animation-name(floating);
+	@include animation-duration(1.5s);
+	@include animation-iteration-count(infinite);
+}
+
+@include keyframes(floating) {
+	  0% { @include transform(translateY(0%)); }
+	 50% { @include transform(translateY(8%)); }
+	100% { @include transform(translateY(0%)); }
+}

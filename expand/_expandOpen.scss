@@ -1,0 +1,14 @@
+.expandOpen{
+	@include animation-name(expandOpen);
+	@include animation-duration(1.2s);
+	@include animation-timing-function(ease-out);
+	visibility: visible !important;
+}
+
+@include keyframes(expandOpen) {
+	  0% { @include transform(scale(1.8)); }
+	 50% { @include transform(scale(0.95)); }
+	 80% { @include transform(scale(1.05)); }
+	 90% { @include transform(scale(0.98)); }
+	100% { @include transform(scale(1)); }
+}

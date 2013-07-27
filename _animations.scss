@@ -1,0 +1,42 @@
+/*
+==============================================
+CSS3 ANIMATION CHEAT SHEET
+==============================================
+
+Made by Justin Aguilar
+SCSS by Yi Ding
+
+www.justinaguilar.com/animations/
+
+Questions, comments, concerns, love letters:
+justin@justinaguilar.com
+==============================================
+*/
+
+//expand
+@import 'expand/_expandOpen';
+@import 'expand/_expandUp';
+
+//pull
+@import 'pull/_pullDown';
+@import 'pull/_pullUp';
+
+//slide
+@import 'slide/_slideDown';
+@import 'slide/_slideExpandUp';
+@import 'slide/_slideLeft';
+@import 'slide/_slideRight';
+@import 'slide/_slideUp';
+
+//stretch
+@import 'stretch/_stretchLeft';
+@import 'stretch/_stretchRight';
+
+//others
+@import 'others/_bigEntrance';
+@import 'others/_bounce';
+@import 'others/_fadeIn';
+@import 'others/_floating';
+@import 'others/_hatch';
+@import 'others/_pulse';
+@import 'others/_tossing';

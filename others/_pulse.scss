@@ -1,0 +1,20 @@
+.pulse {
+	@include animation-name(pulse);
+	@include animation-duration(1.5s);
+	@include animation-iteration-count(infinite);
+}
+
+@include keyframes(pulse) {
+	0% {
+		@include transform(scale(0.9));
+		opacity: 0.7;
+	}
+	50% {
+		@include transform(scale(1));
+		opacity: 1;
+	}
+	100% {
+		@include transform(scale(0.9));
+		opacity: 0.7;
+	}
+}

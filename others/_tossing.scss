@@ -1,0 +1,11 @@
+.tossing {
+	@include animation-name(tossing);
+	@include animation-duration(2.5s);
+	@include animation-iteration-count(infinite);
+}
+
+@include keyframes(tossing) {
+	  0% { @include transform(rotate(-4deg)); }
+	 50% { @include transform(rotate(4deg)); }
+	100% { @include transform(rotate(-4deg)); }
+}

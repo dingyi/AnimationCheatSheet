@@ -1,0 +1,37 @@
+.bigEntrance {
+	@include animation-name(bigEntrance);
+	@include animation-duration(1.6s);
+	@include animation-timing-function(ease-out);
+	visibility: visible !important;
+}
+
+@include keyframes(bigEntrance) {
+	0% {
+		@include transform(scale(0.3) rotate(6deg) translateX(-30%) translateY(30%));
+		opacity: 0.2;
+	}
+	30% {
+		@include transform(scale(1.03) rotate(-2deg) translateX(2%) translateY(-2%));
+		opacity: 1;
+	}
+	45% {
+		@include transform(scale(0.98) rotate(1deg) translateX(0%) translateY(0%));
+		opacity: 1;
+	}
+	60% {
+		@include transform(scale(1.01) rotate(-1deg) translateX(0%) translateY(0%));
+		opacity: 1;
+	}
+	75% {
+		@include transform(scale(0.99) rotate(1deg) translateX(0%) translateY(0%));
+		opacity: 1;
+	}
+	90% {
+		@include transform(scale(1.01) rotate(0deg) translateX(0%) translateY(0%));
+		opacity: 1;
+	}
+	100% {
+		@include transform(scale(1) rotate(0deg) translateX(0%) translateY(0%));
+		opacity: 1;
+	}
+}

@@ -1,0 +1,16 @@
+.stretchRight {
+	@include animation-name(stretchRight);
+	@include animation-duration(1.5s);
+	@include animation-timing-function(ease-out);
+	@include transform-origin(0% 0%);
+}
+
+@include keyframes(stretchRight) {
+	  0% { @include transform(scaleX(0.3)); }
+	 40% { @include transform(scaleX(1.02)); }
+	 60% { @include transform(scaleX(0.98)); }
+	 80% { @include transform(scaleX(1.01)); }
+	100% { @include transform(scaleX(0.98)); }
+	 80% { @include transform(scaleX(1.01)); }
+	100% { @include transform(scaleX(1)); }
+}

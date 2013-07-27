@@ -1,0 +1,15 @@
+.bounce {
+	@include animation-name(bounce);
+	@include animation-duration(1.6s);
+	@include animation-timing-function(ease);
+	@include transform-origin(50% 100%);
+}
+
+@include keyframes(bounce) {
+	  0% { @include transform(translateY(0%) scaleY(0.6)); }
+	 60% { @include transform(translateY(-100%) scaleY(1.1)); }
+	 70% { @include transform(translateY(0%) scaleY(0.95) scaleX(1.05)); }
+	 80% { @include transform(translateY(0%) scaleY(1.05) scaleX(1)); }
+	 90% { @include transform(translateY(0%) scaleY(0.95) scaleX(1)); }
+	100% { @include transform(translateY(0%) scaleY(1) scaleX(1)); }
+}

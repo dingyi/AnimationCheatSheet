@@ -1,0 +1,15 @@
+.slideDown{
+	@include animation-name(slideDown);
+	@include animation-duration(1s);
+	@include animation-timing-function(ease);
+	visibility: visible !important;
+}
+
+@include keyframes(slideDown) {
+	  0% { @include transform(translateY(-100%)); }
+	 50% { @include transform(translateY(8%)); }
+	 65% { @include transform(translateY(-4%)); }
+	 80% { @include transform(translateY(4%)); }
+	 95% { @include transform(translateY(-2%)); }
+	100% { @include transform(translateY(0%)); }
+}

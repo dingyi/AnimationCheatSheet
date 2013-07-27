@@ -1,0 +1,18 @@
+.slideExpandUp{
+	@include animation-name(slideExpandUp);
+	@include animation-duration(1.6s);
+	@include animation-timing-function(ease-out);
+	visibility: visible !important;
+}
+
+@include keyframes(slideExpandUp) {
+	  0% { @include transform(translateY(100%) scaleX(0.5)); }
+	 30% { @include transform(translateY(-8%) scaleX(0.5)); }
+	 40% { @include transform(translateY(2%) scaleX(0.5)); }
+	 50% { @include transform(translateY(0%) scaleX(1.1)); }
+	 60% { @include transform(translateY(0%) scaleX(0.9)); }
+	 70% { @include transform(translateY(0%) scaleX(1.05)); }
+	 80% { @include transform(translateY(0%) scaleX(0.95));	}
+	 90% { @include transform(translateY(0%) scaleX(1.02)); }
+	100% { @include transform(translateY(0%) scaleX(1));	}
+}

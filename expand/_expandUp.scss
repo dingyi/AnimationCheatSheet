@@ -1,0 +1,13 @@
+.expandUp {
+	@include animation-name(expandUp);
+	@include animation-duration(0.7s);
+	@include animation-timing-function(ease);
+	visibility: visible !important;
+}
+
+@include keyframes(expandUp) {
+	  0% { @include transform(translateY(100%) scale(0.6) scaleY(0.5)); }
+	 60% { @include transform(translateY(-7%) scaleY(1.12)); }
+	 75% { @include transform(translateY(3%)); }
+	100% { @include transform(translateY(0%) scale(1) scaleY(1)); }
+}
